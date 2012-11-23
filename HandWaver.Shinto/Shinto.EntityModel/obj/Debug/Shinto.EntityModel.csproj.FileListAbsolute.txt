@@ -1,0 +1,5 @@
+C:\Projects\Shinto\HandWaver.Shinto\Shinto.EntityModel\bin\Debug\Shinto.EntityModel.dll
+C:\Projects\Shinto\HandWaver.Shinto\Shinto.EntityModel\bin\Debug\Shinto.EntityModel.pdb
+C:\Projects\Shinto\HandWaver.Shinto\Shinto.EntityModel\obj\Debug\Shinto.EntityModel.csprojResolveAssemblyReference.cache
+C:\Projects\Shinto\HandWaver.Shinto\Shinto.EntityModel\obj\Debug\Shinto.EntityModel.dll
+C:\Projects\Shinto\HandWaver.Shinto\Shinto.EntityModel\obj\Debug\Shinto.EntityModel.pdb
