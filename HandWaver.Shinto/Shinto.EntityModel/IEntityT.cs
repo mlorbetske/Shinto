@@ -14,5 +14,9 @@ namespace Shinto.EntityModel
     /// <typeparam name="TId">The id type, often a value type</typeparam>
     public interface IEntity<TId> : IEntity
     {
+        /// <summary>
+        /// The Entity Id of the given type
+        /// </summary>
+        TId Id { get; set; }
     }
 }

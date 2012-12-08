@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shinto.EntityModel", "Shinto.EntityModel\Shinto.EntityModel.csproj", "{3B28F371-0FF8-4241-8148-781B50818CD3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D67628CC-5734-4917-9B0E-C98ED7F909D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcousticAudio.EntityModel", "Tests\AcousticAudio.EntityModel\AcousticAudio.EntityModel.csproj", "{12BF8609-4B40-4DD9-9DAF-687E5AFD3449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shinto.Entities", "Shinto.Entities\Shinto.Entities.csproj", "{A55E434E-E013-4DE8-AD1C-79248EFDD743}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +19,19 @@ Global
 		{3B28F371-0FF8-4241-8148-781B50818CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B28F371-0FF8-4241-8148-781B50818CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B28F371-0FF8-4241-8148-781B50818CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12BF8609-4B40-4DD9-9DAF-687E5AFD3449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12BF8609-4B40-4DD9-9DAF-687E5AFD3449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12BF8609-4B40-4DD9-9DAF-687E5AFD3449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12BF8609-4B40-4DD9-9DAF-687E5AFD3449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A55E434E-E013-4DE8-AD1C-79248EFDD743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55E434E-E013-4DE8-AD1C-79248EFDD743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55E434E-E013-4DE8-AD1C-79248EFDD743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55E434E-E013-4DE8-AD1C-79248EFDD743}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12BF8609-4B40-4DD9-9DAF-687E5AFD3449} = {D67628CC-5734-4917-9B0E-C98ED7F909D0}
 	EndGlobalSection
 EndGlobal
