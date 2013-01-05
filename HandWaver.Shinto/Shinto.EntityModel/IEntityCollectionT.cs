@@ -3,20 +3,17 @@
 // http://www.damonpayne.com
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 
 namespace Shinto.EntityModel
 {
     /// <summary>
-    /// 
+    /// A collection of Entities. INCC in order to allow implementors to keep track of relationships.
     /// </summary>
-    /// <typeparam name="TId">The id type, often a value type</typeparam>
-    public interface IEntity<TId> : IEntity
+    /// <typeparam name="TEntity"></typeparam>
+    public interface IEntityCollection<TEntity> : IList<TEntity>, INotifyCollectionChanged where TEntity : IEntity
     {
-        /// <summary>
-        /// The Entity Id of the given instance. Should be implemented in terms of Get/SetKey()
-        /// </summary>
-        TId Id { get; set; }
     }
 }

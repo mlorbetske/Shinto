@@ -28,7 +28,6 @@ namespace EntitiesTests
             Assert.IsTrue(entities.Contains(copy));
             Assert.IsTrue(copy.Equals(e2));
             Assert.IsFalse(e.Equals(e2));
-
         }
     }
 }
