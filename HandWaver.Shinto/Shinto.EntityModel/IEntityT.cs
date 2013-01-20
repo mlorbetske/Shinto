@@ -9,7 +9,7 @@ using System.Text;
 namespace Shinto.EntityModel
 {
     /// <summary>
-    /// 
+    /// An Entity with a typed key
     /// </summary>
     /// <typeparam name="TId">The id type, often a value type</typeparam>
     public interface IEntity<TId> : IEntity

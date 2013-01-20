@@ -9,7 +9,7 @@ using System.Text;
 namespace Shinto.EntityModel
 {
     /// <summary>
-    /// An Entity has a key representing its identity. Implementors should consider overriding Equals and GetHashCode
+    /// An Entity has a key(Id) representing its identity. Implementors should consider overriding Equals and GetHashCode
     /// in terms of this key
     /// </summary>
     public interface IEntity
@@ -19,7 +19,6 @@ namespace Shinto.EntityModel
         /// </summary>
         /// <returns></returns>
         object GetId();
-
 
         /// <summary>
         /// 
