@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesTests", "Tests\Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shinto.PresentationModel", "Shinto.PresentationModel\Shinto.PresentationModel.csproj", "{25AE49C3-49FB-4962-BBEA-D51E45C2413B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationModelTests", "Tests\PresentationModelTests\PresentationModelTests.csproj", "{FC0E36E1-B1A9-4CD5-8791-C3838C431971}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{25AE49C3-49FB-4962-BBEA-D51E45C2413B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25AE49C3-49FB-4962-BBEA-D51E45C2413B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25AE49C3-49FB-4962-BBEA-D51E45C2413B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC0E36E1-B1A9-4CD5-8791-C3838C431971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC0E36E1-B1A9-4CD5-8791-C3838C431971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC0E36E1-B1A9-4CD5-8791-C3838C431971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC0E36E1-B1A9-4CD5-8791-C3838C431971}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +58,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{12BF8609-4B40-4DD9-9DAF-687E5AFD3449} = {D67628CC-5734-4917-9B0E-C98ED7F909D0}
 		{EDFED1CD-98BA-4B82-AB30-6813E25E4946} = {D67628CC-5734-4917-9B0E-C98ED7F909D0}
+		{FC0E36E1-B1A9-4CD5-8791-C3838C431971} = {D67628CC-5734-4917-9B0E-C98ED7F909D0}
 	EndGlobalSection
 EndGlobal

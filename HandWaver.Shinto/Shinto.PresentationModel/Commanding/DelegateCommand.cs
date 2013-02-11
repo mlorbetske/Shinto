@@ -18,12 +18,26 @@ namespace Shinto.PresentationModel.Commanding
         Action _execute;
         Func<bool> _canExecute;
 
+        public void CheckCanExecute()
+        {
+            OnCanExecuteChanged();
+        }
+
         public bool CanExecute(object parameter)
         {
-            return _canExecute();
+            bool can = _canExecute();            
+            return can;
         }
 
         public event EventHandler CanExecuteChanged;
+
+        protected void OnCanExecuteChanged()
+        {
+            if (null != CanExecuteChanged)
+            {
+                CanExecuteChanged(this, EventArgs.Empty);
+            }
+        }
 
         public void Execute(object parameter)
         {
