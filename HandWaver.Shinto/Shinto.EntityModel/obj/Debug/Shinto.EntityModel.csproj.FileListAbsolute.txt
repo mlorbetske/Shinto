@@ -3,3 +3,8 @@ C:\Projects\Shinto\HandWaver.Shinto\Shinto.EntityModel\bin\Debug\Shinto.EntityMo
 C:\Projects\Shinto\HandWaver.Shinto\Shinto.EntityModel\obj\Debug\Shinto.EntityModel.csprojResolveAssemblyReference.cache
 C:\Projects\Shinto\HandWaver.Shinto\Shinto.EntityModel\obj\Debug\Shinto.EntityModel.dll
 C:\Projects\Shinto\HandWaver.Shinto\Shinto.EntityModel\obj\Debug\Shinto.EntityModel.pdb
+C:\Users\Damon\Documents\GitHub\Shinto\HandWaver.Shinto\Shinto.EntityModel\bin\Debug\Shinto.EntityModel.dll
+C:\Users\Damon\Documents\GitHub\Shinto\HandWaver.Shinto\Shinto.EntityModel\bin\Debug\Shinto.EntityModel.pdb
+C:\Users\Damon\Documents\GitHub\Shinto\HandWaver.Shinto\Shinto.EntityModel\obj\Debug\Shinto.EntityModel.csprojResolveAssemblyReference.cache
+C:\Users\Damon\Documents\GitHub\Shinto\HandWaver.Shinto\Shinto.EntityModel\obj\Debug\Shinto.EntityModel.dll
+C:\Users\Damon\Documents\GitHub\Shinto\HandWaver.Shinto\Shinto.EntityModel\obj\Debug\Shinto.EntityModel.pdb
