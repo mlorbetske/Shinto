@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3B28F371-0FF8-4241-8148-781B50818CD3}</ProjectGuid>
+    <ProjectGuid>{5AD70721-7A07-4F22-8035-72F23987314B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Shinto.EntityModel</RootNamespace>
-    <AssemblyName>Shinto.EntityModel</AssemblyName>
+    <RootNamespace>MetroBBQ.DomainModel</RootNamespace>
+    <AssemblyName>MetroBBQ.DomainModel</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile4</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -36,12 +36,7 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IEntity.cs" />
-    <Compile Include="IEntityChangeTracker.cs" />
-    <Compile Include="IEntityCollectionT.cs" />
-    <Compile Include="IEntityT.cs" />
-    <Compile Include="IEntityWithChangeTrackingT.cs" />
-    <Compile Include="ITrackingEntityCollectionT.cs" />
+    <Compile Include="ICooker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
