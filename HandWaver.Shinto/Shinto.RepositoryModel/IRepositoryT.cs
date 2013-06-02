@@ -35,6 +35,5 @@ namespace Shinto.RepositoryModel
         /// <param name="predicate"></param>
         /// <returns></returns>
         IEnumerable<TEntity> Get(Func<TEntity, bool> predicate);
-
     }
 }

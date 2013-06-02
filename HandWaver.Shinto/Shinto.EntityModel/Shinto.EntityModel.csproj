@@ -34,8 +34,15 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="ChangeTrackingInterfaces.cd" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeTracking\IChangeEvent.cs" />
+    <Compile Include="ChangeTracking\ICollectionChangeEvent.cs" />
+    <Compile Include="ChangeTracking\ICreateEvent.cs" />
+    <Compile Include="ChangeTracking\IDeleteEvent.cs" />
+    <Compile Include="ChangeTracking\IPropertyChangeEvent.cs" />
+    <Compile Include="ChangeTracking\IRelationshipChangeEvent.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="IEntityChangeTracker.cs" />
     <Compile Include="IEntityCollectionT.cs" />

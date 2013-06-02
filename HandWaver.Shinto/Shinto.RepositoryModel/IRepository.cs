@@ -13,6 +13,9 @@ namespace Shinto.RepositoryModel
     /// </summary>
     public interface IRepository
     {
- 
+        /// <summary>
+        /// Current work context
+        /// </summary>
+        IUnitOfWork UnitOfWork { get; set; }
     }
 }
