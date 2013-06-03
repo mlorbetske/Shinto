@@ -13,5 +13,54 @@ namespace Shinto
     /// </summary>
     public class Initializer
     {
+        public static ICompositionProvider CompositionProvider { get; set; }
+
+
+        static void EnsureProvider()
+        {
+            Requires.NotNull(Initializer.CompositionProvider, "You must set Initializer.CompositionProvider");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="part"></param>
+        public static void SatisfyImports(object part)
+        {
+            EnsureProvider();
+            CompositionProvider.SatisfyImports(part);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TStaticType"></typeparam>
+        public static void SatisfyImports<TStaticType>()
+        {
+            EnsureProvider();
+            CompositionProvider.SatisfyImports<TStaticType>();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static T GetSingleExport<T>()
+        {
+            EnsureProvider();
+            return CompositionProvider.GetSingleExport<T>();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static IEnumerable<T> GetAllExports<T>()
+        {
+            EnsureProvider();
+            return CompositionProvider.GetAllExports<T>();
+        }
     }
 }

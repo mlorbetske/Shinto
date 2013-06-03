@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Shinto.System.Collections
+namespace System.Collections
 {
     public static class StackExtensions
     {

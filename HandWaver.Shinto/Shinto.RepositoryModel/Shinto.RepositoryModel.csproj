@@ -11,7 +11,7 @@
     <RootNamespace>Shinto.RepositoryModel</RootNamespace>
     <AssemblyName>Shinto.RepositoryModel</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile4</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile23</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
   </PropertyGroup>
@@ -38,12 +38,18 @@
       <Project>{3b28f371-0ff8-4241-8148-781b50818cd3}</Project>
       <Name>Shinto.EntityModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Shinto\Shinto.csproj">
+      <Project>{76c369f7-a2b0-4943-9a8a-3b0590343268}</Project>
+      <Name>Shinto</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IRepository.cs" />
     <Compile Include="IRepositoryT.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="IWriteRepositoryT.cs" />
+    <Compile Include="Modules\Repository.cs" />
+    <Compile Include="Modules\RepositoryT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

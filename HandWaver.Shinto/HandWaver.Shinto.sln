@@ -19,6 +19,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shinto.RepositoryModel", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroBBQ.DomainModel", "Tests\MetroBBQ.DomainModel\MetroBBQ.DomainModel.csproj", "{5AD70721-7A07-4F22-8035-72F23987314B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shinto.AttributeModel", "Shinto.AttributeModel\Shinto.AttributeModel.csproj", "{CAED53ED-5401-45E3-9D31-259A5DDA7C0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeSnippets", "CodeSnippets", "{C4EBEA32-8117-456D-B414-16E388DE4296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shinto.Data", "Shinto.Data\Shinto.Data.csproj", "{A48699DB-D44A-453E-8BB8-D24661F2B226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shinto.Net45", "Shinto.Net45\Shinto.Net45.csproj", "{38410F70-8BA7-4DD2-8F39-160D24B21C96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +65,18 @@ Global
 		{5AD70721-7A07-4F22-8035-72F23987314B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD70721-7A07-4F22-8035-72F23987314B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD70721-7A07-4F22-8035-72F23987314B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAED53ED-5401-45E3-9D31-259A5DDA7C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAED53ED-5401-45E3-9D31-259A5DDA7C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAED53ED-5401-45E3-9D31-259A5DDA7C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAED53ED-5401-45E3-9D31-259A5DDA7C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A48699DB-D44A-453E-8BB8-D24661F2B226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48699DB-D44A-453E-8BB8-D24661F2B226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48699DB-D44A-453E-8BB8-D24661F2B226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48699DB-D44A-453E-8BB8-D24661F2B226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38410F70-8BA7-4DD2-8F39-160D24B21C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38410F70-8BA7-4DD2-8F39-160D24B21C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38410F70-8BA7-4DD2-8F39-160D24B21C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38410F70-8BA7-4DD2-8F39-160D24B21C96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

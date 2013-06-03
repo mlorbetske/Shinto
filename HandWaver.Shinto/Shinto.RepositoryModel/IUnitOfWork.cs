@@ -16,6 +16,15 @@ namespace Shinto.RepositoryModel
         /// </summary>
         IEntityChangeTracker Tracker { get; }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TRepository"></typeparam>
+        /// <returns></returns>
+        TRepository GetRepository<TRepository>() where TRepository : IRepository;
+
+
         /// <summary>
         /// 
         /// </summary>

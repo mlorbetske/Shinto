@@ -29,5 +29,11 @@ namespace Shinto.Entities
                 SetId(value);
             }
         }
+
+        public override bool Equals(object obj)
+        {
+            var rightOp = obj as Entity<TKey>;
+            return base.Equals(rightOp);
+        }
     }
 }

@@ -13,5 +13,30 @@ namespace Shinto
     /// </summary>
     public interface ICompositionProvider
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="part"></param>
+        void SatisfyImports(object part);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TStaticType"></typeparam>
+        void SatisfyImports<TStaticType>();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        T GetSingleExport<T>();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        IEnumerable<T> GetAllExports<T>();
     }
 }

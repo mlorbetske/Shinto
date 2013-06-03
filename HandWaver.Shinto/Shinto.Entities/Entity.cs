@@ -32,18 +32,14 @@ namespace Shinto.Entities
             _myHash = 0;
         }
 
-        public override bool Equals(object rightOp)
+        public override bool Equals(object obj)
         {
-            if (null != rightOp)
+            var rightOp = obj as Entity;
+            if(null == rightOp)
             {
-                if (GetType().Equals(rightOp.GetType())
-                    && GetHashCode() == rightOp.GetHashCode())
-                {
-                    return true;
-                }
+                return false;
             }
-
-            return false;
+            return Object.Equals(GetId(), rightOp.GetId() );
         }
 
         protected virtual void EnsureHash()

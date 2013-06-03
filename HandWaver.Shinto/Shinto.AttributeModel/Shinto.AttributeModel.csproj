@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3B28F371-0FF8-4241-8148-781B50818CD3}</ProjectGuid>
+    <ProjectGuid>{CAED53ED-5401-45E3-9D31-259A5DDA7C0D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Shinto.EntityModel</RootNamespace>
-    <AssemblyName>Shinto.EntityModel</AssemblyName>
+    <RootNamespace>Shinto.AttributeModel</RootNamespace>
+    <AssemblyName>Shinto.AttributeModel</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile4</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -34,22 +34,14 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <None Include="ChangeTrackingInterfaces.cd" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeTracking\IChangeEvent.cs" />
-    <Compile Include="ChangeTracking\ICollectionChangeEvent.cs" />
-    <Compile Include="ChangeTracking\ICreateEvent.cs" />
-    <Compile Include="ChangeTracking\IDeleteEvent.cs" />
-    <Compile Include="ChangeTracking\IPropertyChangeEvent.cs" />
-    <Compile Include="ChangeTracking\IRelationshipChangeEvent.cs" />
-    <Compile Include="IEntity.cs" />
-    <Compile Include="IEntityCache.cs" />
-    <Compile Include="IEntityChangeTracker.cs" />
-    <Compile Include="IEntityCollectionT.cs" />
-    <Compile Include="IEntityT.cs" />
-    <Compile Include="IEntityWithChangeTrackingT.cs" />
-    <Compile Include="ITrackingEntityCollectionT.cs" />
+    <Compile Include="AttributeValueStore.cs" />
+    <Compile Include="AttributeValueTypes.cs" />
+    <Compile Include="IAttribute.cs" />
+    <Compile Include="IAttributeT.cs" />
+    <Compile Include="IAttributeValue.cs" />
+    <Compile Include="IEntityWithAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

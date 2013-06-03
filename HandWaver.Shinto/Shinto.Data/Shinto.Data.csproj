@@ -2,18 +2,15 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3B28F371-0FF8-4241-8148-781B50818CD3}</ProjectGuid>
+    <ProjectGuid>{A48699DB-D44A-453E-8BB8-D24661F2B226}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Shinto.EntityModel</RootNamespace>
-    <AssemblyName>Shinto.EntityModel</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile4</TargetFrameworkProfile>
+    <RootNamespace>Shinto.Data</RootNamespace>
+    <AssemblyName>Shinto.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,26 +30,38 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-    <None Include="ChangeTrackingInterfaces.cd" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeTracking\IChangeEvent.cs" />
-    <Compile Include="ChangeTracking\ICollectionChangeEvent.cs" />
-    <Compile Include="ChangeTracking\ICreateEvent.cs" />
-    <Compile Include="ChangeTracking\IDeleteEvent.cs" />
-    <Compile Include="ChangeTracking\IPropertyChangeEvent.cs" />
-    <Compile Include="ChangeTracking\IRelationshipChangeEvent.cs" />
-    <Compile Include="IEntity.cs" />
-    <Compile Include="IEntityCache.cs" />
-    <Compile Include="IEntityChangeTracker.cs" />
-    <Compile Include="IEntityCollectionT.cs" />
-    <Compile Include="IEntityT.cs" />
-    <Compile Include="IEntityWithChangeTrackingT.cs" />
-    <Compile Include="ITrackingEntityCollectionT.cs" />
+    <Compile Include="DataAccessAdapter.cs" />
+    <Compile Include="DataSet.cs" />
+    <Compile Include="IConnectionManager.cs" />
+    <Compile Include="Modules\ConfigFileConnectionManager.cs" />
+    <Compile Include="Parameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Row.cs" />
+    <Compile Include="RowSet.cs" />
+    <Compile Include="RowSetSchema.cs" />
+    <Compile Include="System\Data\IDataReaderExtensions.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shinto\Shinto.csproj">
+      <Project>{76c369f7-a2b0-4943-9a8a-3b0590343268}</Project>
+      <Name>Shinto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

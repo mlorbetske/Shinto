@@ -1,0 +1,1 @@
+﻿This assembly is currently very SQL-server specific
