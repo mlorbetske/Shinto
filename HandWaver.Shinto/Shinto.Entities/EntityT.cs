@@ -30,6 +30,11 @@ namespace Shinto.Entities
             }
         }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
         public override bool Equals(object obj)
         {
             var rightOp = obj as Entity<TKey>;

@@ -48,6 +48,7 @@
     <Compile Include="IRepositoryT.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="IWriteRepositoryT.cs" />
+    <Compile Include="Modules\ConcurrentEntityCache.cs" />
     <Compile Include="Modules\Repository.cs" />
     <Compile Include="Modules\RepositoryT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

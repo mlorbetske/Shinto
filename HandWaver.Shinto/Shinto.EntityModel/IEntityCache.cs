@@ -7,11 +7,11 @@ namespace Shinto.EntityModel
 {
     public interface IEntityCache
     {
-        IDictionary<TKey, TEntity> GetCacheFor<TEntity, TKey>() where TEntity : IEntity<TKey>;
-        bool Contains<TEntity, TKey>(TKey tgt) where TEntity : IEntity<TKey>;
-        void Add<TEntity, TKey>(TEntity tgt) where TEntity : IEntity<TKey>;
-        void Remove<TEntity, TKey>(TKey tgt) where TEntity : IEntity<TKey>;
-        void Remove<TEntity, TKey>(IEnumerable<TKey> keys) where TEntity : IEntity<TKey>;
+        IDictionary<TId, TEntity> GetCacheFor<TEntity, TId>() where TEntity : IEntity<TId>;
+        bool Contains<TEntity, TId>(TId tgt) where TEntity : IEntity<TId>;
+        void Add<TEntity, TId>(TEntity tgt) where TEntity : IEntity<TId>;
+        void Remove<TEntity, TId>(TId tgt) where TEntity : IEntity<TId>;
+        void Remove<TEntity, TId>(IEnumerable<TId> keys) where TEntity : IEntity<TId>;
     }
 
 }
